@@ -16,8 +16,8 @@ const numPoints = 200;
 const dt = 0.1; // e^{0A} e^{dt A} e^{2dt A}
 const A = math.matrix(
     [
-        [0, 0, 1],
-        [0, 1, 1],
+        [1, 0, 1],
+        [2, 3, 1],
         [-1, -1, 1]
     ]
 );
