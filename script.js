@@ -305,84 +305,84 @@ window.addEventListener('load', () => {
       // 1 0 0
       // 0 1 0
       // 0 0 1
-      document.getElementById("matrix-entry-11").textContent = "1";
-      document.getElementById("matrix-entry-12").textContent = "0";
-      document.getElementById("matrix-entry-13").textContent = "0";
-      document.getElementById("matrix-entry-21").textContent = "0";
-      document.getElementById("matrix-entry-22").textContent = "1";
-      document.getElementById("matrix-entry-23").textContent = "0";
-      document.getElementById("matrix-entry-31").textContent = "0";
-      document.getElementById("matrix-entry-32").textContent = "0";
-      document.getElementById("matrix-entry-33").textContent = "1";
+      document.getElementById("matrix-entry-11").value = "1";
+      document.getElementById("matrix-entry-12").value = "0";
+      document.getElementById("matrix-entry-13").value = "0";
+      document.getElementById("matrix-entry-21").value = "0";
+      document.getElementById("matrix-entry-22").value = "1";
+      document.getElementById("matrix-entry-23").value = "0";
+      document.getElementById("matrix-entry-31").value = "0";
+      document.getElementById("matrix-entry-32").value = "0";
+      document.getElementById("matrix-entry-33").value = "1";
     } else if (choice == 'rotation') {
       // 0 0 1
       // 0 0 2
       // -1 -2 0
-      document.getElementById("matrix-entry-11").textContent = "0";
-      document.getElementById("matrix-entry-12").textContent = "-1";
-      document.getElementById("matrix-entry-13").textContent = "1";
-      document.getElementById("matrix-entry-21").textContent = "1";
-      document.getElementById("matrix-entry-22").textContent = "0";
-      document.getElementById("matrix-entry-23").textContent = "2";
-      document.getElementById("matrix-entry-31").textContent = "-1";
-      document.getElementById("matrix-entry-32").textContent = "-2";
-      document.getElementById("matrix-entry-33").textContent = "0";
+      document.getElementById("matrix-entry-11").value = "0";
+      document.getElementById("matrix-entry-12").value = "-1";
+      document.getElementById("matrix-entry-13").value = "1";
+      document.getElementById("matrix-entry-21").value = "1";
+      document.getElementById("matrix-entry-22").value = "0";
+      document.getElementById("matrix-entry-23").value = "2";
+      document.getElementById("matrix-entry-31").value = "-1";
+      document.getElementById("matrix-entry-32").value = "-2";
+      document.getElementById("matrix-entry-33").value = "0";
     }  else if (choice == 'swirly1') {
       // 0 cos(theta) sin(theta)
       // -cos(theta) 0 cos(2theta)
       // -sin(theta) -cos(2theta) 0
-      document.getElementById("matrix-entry-11").textContent = "0";
-      document.getElementById("matrix-entry-12").textContent = "cos(theta)";
-      document.getElementById("matrix-entry-13").textContent = "sin(theta)";
-      document.getElementById("matrix-entry-21").textContent = "-cos(theta)";
-      document.getElementById("matrix-entry-22").textContent = "0";
-      document.getElementById("matrix-entry-23").textContent = "cos(2theta)";
-      document.getElementById("matrix-entry-31").textContent = "-sin(theta)";
-      document.getElementById("matrix-entry-32").textContent = "-cos(2theta)";
-      document.getElementById("matrix-entry-33").textContent = "0";
+      document.getElementById("matrix-entry-11").value = "0";
+      document.getElementById("matrix-entry-12").value = "cos(theta)";
+      document.getElementById("matrix-entry-13").value = "sin(theta)";
+      document.getElementById("matrix-entry-21").value = "-cos(theta)";
+      document.getElementById("matrix-entry-22").value = "0";
+      document.getElementById("matrix-entry-23").value = "cos(2theta)";
+      document.getElementById("matrix-entry-31").value = "-sin(theta)";
+      document.getElementById("matrix-entry-32").value = "-cos(2theta)";
+      document.getElementById("matrix-entry-33").value = "0";
     } else if (choice == 'swirly2') {
       // sin(theta) cos(2theta) sin(3theta)
       // -cos(4theta) sin(5theta) cos(6theta)
       // -sin(7theta) -cos(8theta) sin(9theta)
-      document.getElementById("matrix-entry-11").textContent = "sin(theta)";
-      document.getElementById("matrix-entry-12").textContent = "cos(2theta)";
-      document.getElementById("matrix-entry-13").textContent = "sin(3theta)";
-      document.getElementById("matrix-entry-21").textContent = "-cos(4theta)";
-      document.getElementById("matrix-entry-22").textContent = "sin(5theta)";
-      document.getElementById("matrix-entry-23").textContent = "cos(6theta)";
-      document.getElementById("matrix-entry-31").textContent = "-sin(7theta)";
-      document.getElementById("matrix-entry-32").textContent = "-cos(8theta)";
-      document.getElementById("matrix-entry-33").textContent = "sin(9theta)";
+      document.getElementById("matrix-entry-11").value = "sin(theta)";
+      document.getElementById("matrix-entry-12").value = "cos(2theta)";
+      document.getElementById("matrix-entry-13").value = "sin(3theta)";
+      document.getElementById("matrix-entry-21").value = "-cos(4theta)";
+      document.getElementById("matrix-entry-22").value = "sin(5theta)";
+      document.getElementById("matrix-entry-23").value = "cos(6theta)";
+      document.getElementById("matrix-entry-31").value = "-sin(7theta)";
+      document.getElementById("matrix-entry-32").value = "-cos(8theta)";
+      document.getElementById("matrix-entry-33").value = "sin(9theta)";
     } else if (choice == 'spider') {
-      document.getElementById("matrix-entry-11").textContent = "1";
-      document.getElementById("matrix-entry-12").textContent = "0";
-      document.getElementById("matrix-entry-13").textContent = "cos(2 theta)";
-      document.getElementById("matrix-entry-21").textContent = "0";
-      document.getElementById("matrix-entry-22").textContent = "sin(theta)";
-      document.getElementById("matrix-entry-23").textContent = "-cos(theta)";
-      document.getElementById("matrix-entry-31").textContent = "1";
-      document.getElementById("matrix-entry-32").textContent = "sin(theta)";
-      document.getElementById("matrix-entry-33").textContent = "sin(2theta)";
+      document.getElementById("matrix-entry-11").value = "1";
+      document.getElementById("matrix-entry-12").value = "0";
+      document.getElementById("matrix-entry-13").value = "cos(2 theta)";
+      document.getElementById("matrix-entry-21").value = "0";
+      document.getElementById("matrix-entry-22").value = "sin(theta)";
+      document.getElementById("matrix-entry-23").value = "-cos(theta)";
+      document.getElementById("matrix-entry-31").value = "1";
+      document.getElementById("matrix-entry-32").value = "sin(theta)";
+      document.getElementById("matrix-entry-33").value = "sin(2theta)";
     } else if (choice == 'original') {
-      document.getElementById("matrix-entry-11").textContent = "sin(2 theta)";
-      document.getElementById("matrix-entry-12").textContent = "0";
-      document.getElementById("matrix-entry-13").textContent = "cos(6 theta)";
-      document.getElementById("matrix-entry-21").textContent = "0";
-      document.getElementById("matrix-entry-22").textContent = "sin(theta)";
-      document.getElementById("matrix-entry-23").textContent = "-cos(theta)";
-      document.getElementById("matrix-entry-31").textContent = "-cos(theta)";
-      document.getElementById("matrix-entry-32").textContent = "cos(4 theta)";
-      document.getElementById("matrix-entry-33").textContent = "sin(theta)";
+      document.getElementById("matrix-entry-11").value = "sin(2 theta)";
+      document.getElementById("matrix-entry-12").value = "0";
+      document.getElementById("matrix-entry-13").value = "cos(6 theta)";
+      document.getElementById("matrix-entry-21").value = "0";
+      document.getElementById("matrix-entry-22").value = "sin(theta)";
+      document.getElementById("matrix-entry-23").value = "-cos(theta)";
+      document.getElementById("matrix-entry-31").value = "-cos(theta)";
+      document.getElementById("matrix-entry-32").value = "cos(4 theta)";
+      document.getElementById("matrix-entry-33").value = "sin(theta)";
     } else if (choice == 'pancake') {
-      document.getElementById("matrix-entry-11").textContent = "sin(theta)";
-      document.getElementById("matrix-entry-12").textContent = "sin(theta)";
-      document.getElementById("matrix-entry-13").textContent = "1";
-      document.getElementById("matrix-entry-21").textContent = "0";
-      document.getElementById("matrix-entry-22").textContent = "0";
-      document.getElementById("matrix-entry-23").textContent = "0";
-      document.getElementById("matrix-entry-31").textContent = "-1";
-      document.getElementById("matrix-entry-32").textContent = "0";
-      document.getElementById("matrix-entry-33").textContent = "0";
+      document.getElementById("matrix-entry-11").value = "sin(theta)";
+      document.getElementById("matrix-entry-12").value = "sin(theta)";
+      document.getElementById("matrix-entry-13").value = "1";
+      document.getElementById("matrix-entry-21").value = "0";
+      document.getElementById("matrix-entry-22").value = "0";
+      document.getElementById("matrix-entry-23").value = "0";
+      document.getElementById("matrix-entry-31").value = "-1";
+      document.getElementById("matrix-entry-32").value = "0";
+      document.getElementById("matrix-entry-33").value = "0";
     }
   });
 
