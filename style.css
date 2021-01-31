@@ -68,6 +68,8 @@ button:hover {
   align-items: flex-end;
   color: white;
   font-family: 'Lekton';
+  max-height: calc(100vh - 2em);
+  overflow-y: auto;
 }
 
 #info h3, #info p {
@@ -167,6 +169,10 @@ textarea {
   font-size: 1.1em !important;
 }
 
+.katex-display {
+  margin: .5em 0 !important;
+}
+
 select {
   color: white;
   background: none;
@@ -186,4 +192,37 @@ select:focus {
 select option {
   font-size: 1em;
   background-color: rgba(0, 0, 0, .8);
+}
+
+#learn-more {
+  cursor: pointer;
+  transition: color 500ms;
+}
+#learn-more:hover {
+  color: rgb(247, 178, 178);
+}
+
+#content {
+  width: 50ch;
+  padding-bottom: .5em;
+}
+
+h1, h2 {
+  text-align: right;
+  padding-right: 5px;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 1.3em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin: 0;
+}
+
+#content p .katex {
+  /* font-family: 'Roboto'; */
+  font-size: 1.05em !important;
 }

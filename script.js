@@ -271,6 +271,10 @@ window.addEventListener('load', () => {
     resetSpeeds();
   });
 
+  document.getElementById('learn-more').addEventListener('click', () => {
+    document.getElementById('content').classList.toggle('hidden');
+  });
+
 
   let editMatrixButton = document.getElementById('edit-matrix-button');
   editMatrixButton.addEventListener('click', () => {
