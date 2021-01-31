@@ -73,14 +73,14 @@
         <h2>Exponential What?</h2>
         <p> The (usual) exponential function is a map \(\operatorname{exp} : \R \to \R \) given by the following power series:
         $$\exp(x) = \sum_{n=0}^\infty \frac{x^n}{n!}.$$
-        This power series can be shown to converge everywhere and has connections to Euler's constant \( e \).
+        This power series can be shown to converge everywhere and has connections to Euler's constant <span style="white-space: nowrap;">\( e \).</span>
         We can generalize this function to a map \( \operatorname{exp} : M_n(\R) \to M_n(\R) \), that is we apply the power series on real-valued square matrices:
         $$ \exp(X) = \sum_{n=0}^\infty \frac{X^n}{n!}. $$
         This map can be shown to converge with respect to any matrix norm, but it is most easily shown with the operator norm as it is an easy consequence of the fact that the usual exponential function on \( \R \) converges everywhere.</p>
         <h2>Ok, but what am I looking at?</h2>
         <p>The matrix exponential map has a suprising property: the exponential of <emph>any</emph> square matrix is invertible.
         In fact, this follows from the fact that \( \exp(A + B) = \exp(A) \exp(B) \) whenever \( A \) and \( B \) commute.
-        Thus, the inverse of \( \exp(A) \) is none other than \( \exp(-A) \), mirroring a similar fact about the usual exponential on the real numbers.
+        Thus, the inverse of \( \exp(A) \) is none other than <span style="white-space: nowrap;">\( \exp(-A) \),</span> mirroring a similar fact about the usual exponential on the real numbers.
         This means that the matrix exponential is in fact a map into the group of \(  n \times n \) invertible matrices:
         \[ \exp: M_n(\R) \to GL_n(\R). \]
         The lines that you see are related by a concept called a one-parameter subgroup of a Lie group.</p>
@@ -88,14 +88,14 @@
         \[ \varphi : \R \to G \]
         such that \( \varphi \) is a smooth homomorphism, in the sense that is it infinitely differentiable (this concept is defined since \( G \) is a smooth manifold by virtue of the fact that it is a Lie group, but this detail is not so important) and the following holds for all \( s, t \) in \( \mathbb R \)
         \[ \varphi(s + t) = \varphi(s) \varphi(t). \] </p>
-        <p>These one-parameter subgroups can be viewed geometrically as tracing a curve through the manifold \( G \).
-        In our case, we a tracing a curve through the space of invertible \( 3 \times 3 \) matrices \( GL_3(\mathbb R) \).
+        <p>These one-parameter subgroups can be viewed geometrically as tracing a curve through the manifold <span style="white-space: nowrap;">\( G \).</span>
+        In our case, we a tracing a curve through the space of invertible \( 3 \times 3 \) matrices <span style="white-space: nowrap;">\( GL_3(\mathbb R) \).</span>
         The connection between this and the matrix exponential is that every one-parameter subgroup of a matrix Lie group (i.e. a subgroup of \( GL_n(\mathbb R) \) which is still a Lie group) has the form
         \[ \varphi(t) = \exp(tA) \]
-        for some matrix \( A \in M_n(\mathbb{R}) \).
+        for some matrix <span style="white-space: nowrap;">\( A \in M_n(\mathbb{R}) \).</span>
         <h2>So how do we get curves in \( \mathbb R^3 \)?</h2>
         Square matrices in \( GL_n(\mathbb R) \) act on \( \mathbb R^n \) by matrix-vector multiplication.
-        So, we can bring down a curve in \( GL_3(\mathbb R) \) back into a curve in \( \mathbb R^3 \) by picking a point \( v \in \mathbb R^3 \) and computing the <emph>orbit</emph> \( \varphi(\mathbb R) v \).
+        So, we can bring down a curve in \( GL_3(\mathbb R) \) back into a curve in \( \mathbb R^3 \) by picking a point \( v \in \mathbb R^3 \) and computing the <emph>orbit</emph> <span style="white-space: nowrap;">\( \varphi(\mathbb R) v \).</span>
         In otherwords, for every matrix in the curve described by the exponential map
         \[ t \mapsto \exp(tA) \]
         we multiply the vector \( v \) by that matrix.
@@ -105,9 +105,5 @@
         </p>
       </div>
     </div>
-
-    
-    <!-- Lie groups on matrices -->
-    <!-- Graph in 3D -->
   </body>
 </html>

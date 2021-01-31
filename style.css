@@ -204,6 +204,7 @@ select option {
 
 #content {
   width: 50ch;
+  max-width: 80vw;
   padding-bottom: .5em;
   padding-left: 20px;
 }
