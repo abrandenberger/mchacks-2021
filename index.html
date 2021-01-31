@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Lie for Me</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.1.0/math.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/@icon/dripicons/dripicons.css">
@@ -32,27 +32,40 @@
         <!-- default: our -->
       </div>
       <button id="edit-matrix-button">Edit Matrix Expression</button>
-      <div id="matrix-input" class="hidden">
-        <!-- a grid of text areas for the user to type expressions in plain text  -->
-        <textarea id="matrix-entry-11">sin(2 theta)</textarea>
-        <textarea id="matrix-entry-12">0</textarea>
-        <textarea id="matrix-entry-13">cos(6 theta)</textarea>
-        <textarea id="matrix-entry-21">0</textarea>
-        <textarea id="matrix-entry-22">sin(theta)</textarea>
-        <textarea id="matrix-entry-23">-cos(theta)</textarea>
-        <textarea id="matrix-entry-31">-cos(theta)</textarea>
-        <textarea id="matrix-entry-32">cos(4 theta)</textarea>
-        <textarea id="matrix-entry-33">sin(theta)</textarea>
+      <div id="matrix-input-wrapper" class='hidden'>
+        <select id="matrix-select">
+            <option value="">-Choose a Matrix-</option>
+            <option value="identity">Identity</option>
+            <option value="rotation">Rotation</option>
+            <option value="swirly1">Many circles</option>
+            <option value="swirly2">Something swishy</option>
+            <option value="spider">Long spindly flows</option>
+            <option value='pancake'>Pancake spirals</option>
+            <option value="original">The original one</option>
+        </select>
+        <p>or write your own expressions</p>
+        <div id="matrix-input">
+          <!-- a grid of text areas for the user to type expressions in plain text  -->
+          <textarea id="matrix-entry-11">sin(2 theta)</textarea>
+          <textarea id="matrix-entry-12">0</textarea>
+          <textarea id="matrix-entry-13">cos(6 theta)</textarea>
+          <textarea id="matrix-entry-21">0</textarea>
+          <textarea id="matrix-entry-22">sin(theta)</textarea>
+          <textarea id="matrix-entry-23">-cos(theta)</textarea>
+          <textarea id="matrix-entry-31">-cos(theta)</textarea>
+          <textarea id="matrix-entry-32">cos(4 theta)</textarea>
+          <textarea id="matrix-entry-33">sin(theta)</textarea>
+        </div>
       </div>
       <div class='slider-div'>
         <label for="theta-speed">\(\theta\) speed</label>
         <input type="range" id="theta-dot" name="theta-speed" class="slider"
-          min="0" max="0.001" step="0.00001" value="0.0005">
+          min="0" max="0.002" step="0.00001" value="0.0005">
       </div>
       <div class='slider-div'>
         <label for="rotation-speed">Camera rotation </label>
         <input type="range" id="camera-dot" name="rotation-speed" class="slider"
-          min="0" max="1" step="0.01" value="0.2">
+          min="0" max="1.5" step="0.01" value="0.2">
       </div>
     </div>
     
