@@ -1,11 +1,161 @@
-html, body {
-    margin: 0;
-    padding: 0;
+body, html {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overscroll-behavior: none;
+  /* overflow: auto; */
 }
 
 canvas {
   padding: 0;
   margin: 0;
   display: block;
-  background-color: black;
+  background: radial-gradient(circle farthest-corner at center bottom, #000000, rgb(48, 2, 2));
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Lekton';
+  background-color: rgba(255, 183, 183, 0.3); 
+  border: 1px solid white;
+  margin-right: 5px;
+  color: white;
+  font-size: 1.1em;
+  margin-bottom: 3px;
+  transition: background-color 500ms, color 500ms;
+  -webkit-transition: background-color 500ms, color 500ms;
+  -ms-transition: background-color 500ms, color 500ms;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#info-button {
+  position: absolute;
+  height: 2em;
+  background: none;
+  border: none; 
+  width: 2em; 
+  padding: 0;
+  margin: 0;
+  top: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#info-button:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#info {
+  position: absolute; 
+  top: 2em; 
+  padding-right: 3px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+  font-family: 'Lekton';
+}
+
+#info h3, #info p {
+  /* font-family: 'Lekton'; */
+  /* color: white;  */
+  padding-top: 0;
+  padding-right: 5px;
+  margin: 0;
+}
+#info h3 {
+  font-size: 1.2em;
+}
+#info p {
+  font-size: 1.1em;
+}
+#info p .katex {
+  font-size: .9em !important;
+}
+
+.matrix {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#matrix-input {
+  display: grid;
+  padding-right: 5px;
+  grid-gap: 5px;
+  grid-template: ". . ." auto
+                 ". . ." auto
+                 ". . ." auto /
+                 auto auto auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+textarea {
+  resize: none; 
+  height: 1.1em;
+  width: 9em;
+  background: none; 
+  color: white;
+  border: 1px solid white;
+}
+
+.slider-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-div > label {
+  padding-right: 2px;
+}
+
+.slider-div > input {
+  -webkit-appearance: none;
+  /* width: 100%; */
+  height: 10px;
+  border-radius: 5px;  
+  background: none;
+  border: 1px solid white;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider-div > input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 20%;
+  background: white;
+  cursor: pointer;
+}
+
+.slider-div > input::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 20%;
+  background: white;
+  cursor: pointer;
+}
+
+.katex {
+  font-size: 1.1em !important;
 }
