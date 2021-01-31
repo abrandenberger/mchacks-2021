@@ -72,10 +72,10 @@
         <p>You are seeing the orbits of the matrix exponential map acting on a set of 26 vectors in \( \mathbb{R}^3 \).</p>
         <h2>Exponential What?</h2>
         <p> The (usual) exponential function is a map \(\operatorname{exp} : \R \to \R \) given by the following power series:
-        $$\exp(x) = \sum_{n=1}^\infty \frac{x^n}{n!}.$$
+        $$\exp(x) = \sum_{n=0}^\infty \frac{x^n}{n!}.$$
         This power series can be shown to converge everywhere and has connections to Euelr's constant \( e \).
         We can generalize this function to a map \( \operatorname{exp} : M_n(\R) \to M_n(\R) \), that is we apply the power series on real-valued square matrices:
-        $$ \exp(X) = \sum_{n=1}^\infty \frac{X^n}{n!}. $$
+        $$ \exp(X) = \sum_{n=0}^\infty \frac{X^n}{n!}. $$
         This map can be shown to converge with respect to any matrix norm, but it is most easily shown with the operator norm as it is an easy consequence of the fact that the usual exponential function on \( \R \) converges everywhere.</p>
         <h2>Ok, but what am I looking at?</h2>
         <p>The matrix exponential map has a suprising property: the exponential of <emph>any</emph> square matrix is invertible.
@@ -90,7 +90,7 @@
         \[ \varphi(s + t) = \varphi(s) \varphi(t). \] </p>
         <p>These one-parameter subgroups can be viewed geometrically as tracing a curve throught the manifold \( G \).
         In our case, we a tracing a curve through the space of invertible \( 3 \times 3 \) matrices \( GL_3(\mathbb R) \).
-        The connection between this and the matrix exponential is that every one-parameter subgroup of a matrix Lie group (i.e. a subgroup of \( GL_n\) which is still a Lie group) has the form
+        The connection between this and the matrix exponential is that every one-parameter subgroup of a matrix Lie group (i.e. a subgroup of \( GL_n(\mathbb R) \) which is still a Lie group) has the form
         \[ \varphi(t) = \exp(tA) \]
         for some matrix \( A \in M_n(\mathbb{R}) \).
         <h2>So how do we get curves in \( \mathbb R^3 \)?</h2>
